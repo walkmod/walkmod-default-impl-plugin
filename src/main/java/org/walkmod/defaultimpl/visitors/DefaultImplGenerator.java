@@ -43,7 +43,7 @@ public class DefaultImplGenerator extends VoidVisitorAdapter<VisitorContext> {
 		ClassOrInterfaceDeclaration impl = (ClassOrInterfaceDeclaration) arg
 				.get(GENERATED_IMPLEMENTATION);
 		List<AnnotationExpr> ann = new LinkedList<AnnotationExpr>();
-		ann.add(ASTManager.getGeneratedAnnotation());
+		
 		MethodDeclaration aux = new MethodDeclaration(n.getJavaDoc(),
 				n.getModifiers(), ann, n.getTypeParameters(), n.getType(),
 				n.getName(), n.getParameters(), n.getArrayCount(),
